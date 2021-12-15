@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .App {
+  font-family: 'Bebas Neue', cursive;
   text-align: center;
 }
 
 /* $centered-box: center; */
 
 main {
+  
   max-width: 1200px;
   margin: auto;
 }
@@ -20,10 +24,14 @@ nav > ul {
 }
 
 nav {
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', cursive;
   border-top: 0.1rem solid #e1e1e1;
 }
 
 .store-logo {
+  transform: translate(25%);
+  font-size: 3rem;
   display:flex;
   justify-content: center;
 }
@@ -51,6 +59,7 @@ nav {
 
 .product-header {
   /* text-decoration: underline; */
+  font-size: 2rem;
 }
 
 .active {
@@ -60,6 +69,7 @@ nav {
 .category-title {
   display:flex;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 span {
@@ -77,13 +87,13 @@ nav > ul > li {
 
 .category-selector {
   transform: scale(1);
-  
+  margin-bottom: 1rem;
   list-style-type: none;
   /* padding: 0 1rem; */
   display: flex;
   flex-direction: column;
   justify-content: start;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .category-selector > li {
@@ -96,10 +106,11 @@ nav > ul > li {
 
 .index-container {
   display: grid;
-  grid-template-columns: repeat(1, 10rem 1fr);
+  grid-template-columns: repeat(1, 11rem 1fr);
 }
 
 .header {
+  font-family: 'Bebas Neue', cursive;
   /* text-align: center; */
 }
 
@@ -157,6 +168,14 @@ nav > ul > li {
 .category-selector-items:target {
  border:solid;
   
+}
+
+.header-title {
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translate(15%);
 }
 
 .header-links {

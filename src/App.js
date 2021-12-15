@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header setProducts={setProducts} products={products}/>
     <main className="App">
       <Routes>
         <Route path="/products" element={<Index products={products} setProducts={setProducts}/>} />
