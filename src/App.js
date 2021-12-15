@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
+import {Redirect} from "react-dom"
 import Index from './components/Index';
 import Header from './components/Header';
 import { useEffect, useState } from 'react';
@@ -45,9 +46,14 @@ function App() {
       <Header setProducts={setProducts} products={products}/>
     <main className="App">
       <Routes>
+        <Route path="/" element={<Index products={products} setProducts={setProducts}/>} />
         <Route path="/products" element={<Index products={products} setProducts={setProducts}/>} />
         <Route path="/products/:id" element={<Index products={products} setProducts={setProducts}/>}/>
         <Route path="/about" element={<About />}/>
+        
+          {/* <Redirect to="/products" /> */}
+        
+        
       </Routes>
     </main>
     </>
