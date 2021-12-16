@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route, Link } from "react-router-dom";
 import {Redirect} from "react-dom"
 import Index from './components/Index';

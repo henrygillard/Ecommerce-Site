@@ -19,7 +19,7 @@ export default function SearchBar({setProducts, products}) {
     }
     
     return(
-        <div>Search:
+        <div className='search-bar'>Search:
             <input type="search" placeholder="Search by Name" onChange={handleChange}/>
         </div>
     )
